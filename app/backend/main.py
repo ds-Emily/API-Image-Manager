@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, , render_template
+from flask import Flask, jsonify, render_template
 from http_requests.image_api import ImageAPI
 from services.image_service import ImageProcessor
 
