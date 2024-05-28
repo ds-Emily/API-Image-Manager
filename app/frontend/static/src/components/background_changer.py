@@ -5,7 +5,8 @@ def fetch_new_image():
     def on_complete(req):
         if req.status == 200:
             data = req.json()
-            update_image(data['image_data'])
+            image_data = data['image_data']
+            update_image(image_data)
 
     ajax.get('/api/image', oncomplete=on_complete)
 
