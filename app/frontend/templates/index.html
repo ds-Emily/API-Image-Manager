@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Desktop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/brython_stdlib.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/brython.js') }}"></script>
+</head>
+<body onload="brython()">
+    <div id="image-container">
+        <img id="remote-image" src="" alt="Remote Desktop">
+    </div>
+    <script type="text/python" src="{{ url_for('static', filename='../src/main.py') }}"></script>
+</body>
+</html>
